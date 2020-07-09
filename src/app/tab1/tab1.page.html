@@ -9,14 +9,14 @@
 <ion-content [fullscreen]="true" color="dark">
   <ion-card>
     <ion-item color="dark">
-      <ion-label>{{calculo}}</ion-label>
+      <ion-label>{{calculo}}</ion-label> // concatenação da variável "calculo" que está sendo manipulada no typescript
     </ion-item>
     <ion-item color="dark">
-      <ion-label><ion-icon name="reorder-two-outline"></ion-icon>{{resultado}}</ion-label>
+      <ion-label><ion-icon name="reorder-two-outline"></ion-icon>{{resultado}}</ion-label> // concatenação da variável "resultado" que está sendo manipulada no typescript
     </ion-item>
   </ion-card>
 
-  <ion-card color="dank">
+  <ion-card color="dank"> // apartir daqui temos vários "(click)'s" onde são utilizados para chamar função que foram criados no arquivo de typescript
     <ion-grid>
       <ion-row>
         <ion-col size="3">
@@ -83,6 +83,7 @@
         </ion-col>
         <ion-col size="6">
           <ion-button color="danger" (click)="calcularResultado()">=</ion-button>
+          <ion-button color="danger" routerLink="home">=</ion-button>
         </ion-col>
       </ion-row>
     </ion-grid>
